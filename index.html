@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marvel - Tailwindcss</title>
+  <link rel="stylesheet" href="dist/main.css">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;700;900&display=swap" rel="stylesheet">
+  <!-- Font-awesome -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    #menu-toggle:checked + #menu {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <!-- Start Header Section -->
+  <header class="h-screen font-maven">
+    <div class="container mx-auto px-4 md:px-8 py-2 pt-4 flex justify-between flex-wrap">
+      <div class="lg:pl-4">
+        <a href="/" class="text-2xl py-2">
+          <i class="fa fa-diamond text-3xl mx-2" aria-hidden="true"></i>
+          <span class="font-bold capitalize">marvel</span>
+        </a>
+      </div>
+      <label for="menu-toggle" class="block md:hidden cursor-pointer self-center mr-2">
+        <svg class="fill-current text-gray-900"
+          xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+            <title>menu</title>
+            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+          </svg>
+      </label>
+      <input class="hidden" type="checkbox" id="menu-toggle" />
+      <div class="hidden w-full text-center md:flex md:flex-grow md:w-auto" id="menu">
+        <ul class="pt-5 md:pt-0 md:flex md:flex-grow md:justify-center">
+          <li class="py-2 mx-4"><a href="#" class="capitalize">about</a></li>
+          <li class="py-2 mx-4"><a href="#" class="capitalize">projects</a></li>
+          <li class="py-2 mx-4"><a href="#" class="capitalize">resume</a></li>
+          <li class="py-2 mx-4"><a href="#" class="capitalize">contact</a></li>
+        </ul>
+        <div class="mt-2 lg:pr-4">
+          <i class="fa fa-moon-o" aria-hidden="true"></i>
+          <span> Color mode</span>
+        </div>
+      </div>
+    </div>
+    <div class="container pb-20 mx-auto px-4 md:px-8 py-4 flex flex-wrap justify-center">
+      <div class="sm:w-full lg:w-1/2 px-2 pt-32">
+        <span class="px-4 py-2 text-textColor font-semibold text-sm capitalize">welcome to my portfolio website!</span>
+        <h1 class="text-4xl font-semibold my-4">Hey folks, I'm Marvel Sann Web Designer</h1>
+        <p class="mb-4 text-textColor tracking-wide text-lg">
+          Building a successful product is a challenge. I am highly energetic in user experience design, interfaces and web
+          development.
+        </p>
+        <div class="w-full">
+          <button class="w-full sm:w-auto bg-grey text-textColor my-1 mx-auto py-3 px-8 rounded-full font-semibold">
+            <i class="fa fa-file-text-o" aria-hidden="true"></i>
+            download resume
+          </button>
+          <button class="w-full sm:w-auto bg-secondryColor text-white my-1 mx-auto py-3 px-8 rounded-full font-semibold">get a free quote</button>
+        </div>
+      </div>
+      <div class="mt-16 w-full lg:w-1/2 flex justify-center">
+        <img src="./src/images/app/image_header.svg" alt="image_header" class="lg:w-4/5">
+      </div>
+    </div>
+  </header>
+  <!-- End Header Section -->
+</body>
+</html>
