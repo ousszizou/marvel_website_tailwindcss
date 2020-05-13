@@ -50,4 +50,48 @@
   @apply w-full mx-auto py-3 px-8 rounded-full font-semibold my-1
 }
 
+.owl-item > img {
+  @apply max-w-5xl inline-block !important
+}
+
+.owl-prev > span {
+  @apply hidden
+}
+
+.owl-prev:before {
+  content: "\f060";
+  background: none;
+  padding: 0;
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  font-family: "FontAwesome";
+  color: #47465A;
+  font-size: 70px;
+  left: 75px;
+  -webkit-text-stroke: 6px white;
+  text-stroke: 6px white;
+}
+
+.owl-next:before {
+  content: "\f061";
+  background: none;
+  padding: 0;
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  font-family: "FontAwesome";
+  color: #47465A;
+  font-size: 70px;
+  right: 75px;
+  -webkit-text-stroke: 6px white;
+  text-stroke: 6px white;
+}
+
+.owl-next > span {
+  @apply hidden
+}
+
 @tailwind utilities;

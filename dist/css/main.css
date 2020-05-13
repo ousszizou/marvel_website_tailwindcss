@@ -713,6 +713,51 @@ video {
   margin-bottom: 0.25rem
 }
 
+.owl-item > img {
+  max-width: 64rem !important;
+  display: inline-block !important
+}
+
+.owl-prev > span {
+  display: none
+}
+
+.owl-prev:before {
+  content: "\f060";
+  background: none;
+  padding: 0;
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  font-family: "FontAwesome";
+  color: #47465A;
+  font-size: 70px;
+  left: 75px;
+  -webkit-text-stroke: 6px white;
+  text-stroke: 6px white;
+}
+
+.owl-next:before {
+  content: "\f061";
+  background: none;
+  padding: 0;
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  font-family: "FontAwesome";
+  color: #47465A;
+  font-size: 70px;
+  right: 75px;
+  -webkit-text-stroke: 6px white;
+  text-stroke: 6px white;
+}
+
+.owl-next > span {
+  display: none
+}
+
 .space-y-0 > :not(template) ~ :not(template) {
   --space-y-reverse: 0;
   margin-top: calc(0px * calc(1 - var(--space-y-reverse)));

@@ -4,16 +4,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Marvel - Tailwindcss</title>
-  <link rel="stylesheet" href="dist/css/main.css">
+  
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;700;900&display=swap" rel="stylesheet">
   <!-- Font-awesome -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <!-- olw-carousel2 library-->
+  <link rel="stylesheet" href="./dist/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="./dist/css/owl.theme.default.min.css">
+
+  <link rel="stylesheet" href="dist/css/main.css">
   <style>
     #menu-toggle:checked + #menu {
       display: block;
     }
   </style>
+
 </head>
 <body>
   <!-- Start Header Section -->
@@ -68,5 +75,39 @@
     </div>
   </header>
   <!-- End Header Section -->
+  <!-- Start Projects Section -->
+  <div class="container mx-auto text-center pb-16">
+    <div>
+      <h2>
+        Things I have designed for digital media agencies
+      </h2>
+    </div>
+    <div class="owl-carousel owl-theme owl-loaded owl-drag">
+      <div class="owl-stage-outer">
+        <div class="owl-stage">
+          <div class="owl-item">
+            <img src="./dist/images/project/project-image01.png" alt="project 1">
+          </div>
+          <div class="owl-item">
+            <img src="./dist/images/project/project-image02.png" alt="project 2">
+          </div>
+          <div class="owl-item">
+            <img src="./dist/images/project/project-image03.png" alt="project 3">
+          </div>
+          <div class="owl-item">
+            <img src="./dist/images/project/project-image04.png" alt="project 4">
+          </div>
+          <div class="owl-item">
+            <img src="./dist/images/project/project-image05.png" alt="project 5">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Projects Section -->
+
+  <script src="./dist/js/jquery-3.3.1.min.js"></script>
+  <script src="./dist/js/owl.carousel.min.js"></script>
+  <script src="./dist/js/main.js"></script>
 </body>
 </html>
