@@ -4,6 +4,14 @@ $(document).ready(function () {
     loop: true,
     nav: true,
     autoplay: true,
-    autoplayHoverPause: true
+    autoplayHoverPause: true,
+    responsive: {
+      0: {
+        nav: false
+      },
+      768: {
+        nav: true
+      },
+    }
   });
 });

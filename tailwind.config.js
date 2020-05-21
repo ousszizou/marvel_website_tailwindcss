@@ -7,7 +7,8 @@ module.exports = {
       colors: {
         textColor: "#5b5b5b",
         grey: "#EEEEEE",
-        secondryColor: "#47465A"
+        secondryColor: "#47465A",
+        headingColor: "#353535"
       }
     },
   },

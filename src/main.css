@@ -94,4 +94,20 @@
   @apply hidden
 }
 
+@screen md {
+  .owl-prev:before {
+    left: 20px;
+    font-size: 60px;
+  }
+  .owl-next:before {
+    right: 20px;
+    font-size: 60px;
+  }
+
+  .owl-carousel .owl-item img {
+    width: 80%
+  }
+}
+
+
 @tailwind utilities;
