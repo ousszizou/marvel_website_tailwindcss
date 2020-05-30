@@ -8,7 +8,8 @@ module.exports = {
         textColor: "#5b5b5b",
         grey: "#EEEEEE",
         secondryColor: "#47465A",
-        headingColor: "#353535"
+        headingColor: "#353535",
+        headingColor2: "#484848"
       }
     },
   },
