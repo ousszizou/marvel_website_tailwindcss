@@ -109,6 +109,22 @@
   }
 }
 
+.timeline-yr {
+  @apply w-20 h-20 bg-secondryColor rounded-full relative float-left;
+}
+
+.timeline-content-title-primary {
+  @apply capitalize text-base text-headingColor2 font-bold text-3xl ml-8;
+}
+
+.timeline-content-title-secondary {
+  @apply capitalize text-base text-secondryColor ml-3 font-black;
+}
+
+.timeline-content-text {
+  @apply text-textColor tracking-wide text-lg font-light ml-24;
+}
+
 .timeline-yr > span {
   top: 50%;
   left: 50%;

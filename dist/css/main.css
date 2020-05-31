@@ -774,6 +774,48 @@ video {
   }
 }
 
+.timeline-yr {
+  width: 5rem;
+  height: 5rem;
+  --bg-opacity: 1;
+  background-color: #47465A;
+  background-color: rgba(71, 70, 90, var(--bg-opacity));
+  border-radius: 9999px;
+  position: relative;
+  float: left;
+}
+
+.timeline-content-title-primary {
+  text-transform: capitalize;
+  font-size: 1rem;
+  --text-opacity: 1;
+  color: #484848;
+  color: rgba(72, 72, 72, var(--text-opacity));
+  font-weight: 700;
+  font-size: 1.875rem;
+  margin-left: 2rem;
+}
+
+.timeline-content-title-secondary {
+  text-transform: capitalize;
+  font-size: 1rem;
+  --text-opacity: 1;
+  color: #47465A;
+  color: rgba(71, 70, 90, var(--text-opacity));
+  margin-left: 0.75rem;
+  font-weight: 900;
+}
+
+.timeline-content-text {
+  --text-opacity: 1;
+  color: #5b5b5b;
+  color: rgba(91, 91, 91, var(--text-opacity));
+  letter-spacing: 0.025em;
+  font-size: 1.125rem;
+  font-weight: 300;
+  margin-left: 6rem;
+}
+
 .timeline-yr > span {
   top: 50%;
   left: 50%;
