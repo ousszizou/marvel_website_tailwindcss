@@ -110,15 +110,15 @@
 }
 
 .timeline-yr {
-  @apply w-20 h-20 bg-secondryColor rounded-full relative float-left;
+  @apply w-20 h-20 bg-secondryColor rounded-full relative float-left  mr-8;
 }
 
 .timeline-content-title-primary {
-  @apply capitalize text-base text-headingColor2 font-bold text-3xl ml-8;
+  @apply capitalize text-base text-headingColor2 font-bold text-3xl ml-8 block;
 }
 
 .timeline-content-title-secondary {
-  @apply capitalize text-base text-secondryColor ml-3 font-black;
+  @apply capitalize text-base text-secondryColor font-black;
 }
 
 .timeline-content-text {
@@ -138,6 +138,18 @@
   height: 100%;
   position: absolute;
   left: 38px;
+}
+
+@screen lg {
+  .timeline-content-title-primary {
+    @apply inline;
+  }
+  .timeline-content-title-secondary {
+    @apply ml-3
+  }
+  .timeline-yr {
+    @apply mr-0;
+  }
 }
 
 @tailwind utilities;
