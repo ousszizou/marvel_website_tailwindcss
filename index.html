@@ -1,227 +1,377 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Marvel - Tailwindcss</title>
-  
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;700;900&display=swap" rel="stylesheet">
-  <!-- Font-awesome -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  
-  <!-- olw-carousel2 library-->
-  <link rel="stylesheet" href="./dist/css/owl.carousel.min.css">
-  <link rel="stylesheet" href="./dist/css/owl.theme.default.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marvel - Tailwindcss</title>
 
-  <link rel="stylesheet" href="dist/css/main.css">
-  <style>
-    #menu-toggle:checked + #menu {
-      display: block;
-    }
-  </style>
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
-</head>
-<body>
-  <!-- Start Header Section -->
-  <header class="h-auto xl:h-screen font-maven">
-    <div class="container mx-auto navbar">
-      <div class="lg:pl-4">
-        <a href="/" class="text-2xl py-2">
-          <i class="fa fa-diamond text-3xl mx-2" aria-hidden="true"></i>
-          <span class="font-bold capitalize">marvel</span>
-        </a>
-      </div>
-      <label for="menu-toggle" class="menuIcon">
-        <svg class="fill-current text-gray-900"
-          xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+    <!-- olw-carousel2 library-->
+    <link rel="stylesheet" href="./dist/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./dist/css/owl.theme.default.min.css" />
+
+    <link rel="stylesheet" href="dist/css/main.css" />
+    <style>
+      #menu-toggle:checked + #menu {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Start Header Section -->
+    <header class="h-auto xl:h-screen font-maven">
+      <div class="container mx-auto navbar">
+        <div class="lg:pl-4">
+          <a href="/" class="text-2xl py-2">
+            <i class="fa fa-diamond text-3xl mx-2" aria-hidden="true"></i>
+            <span class="font-bold capitalize">marvel</span>
+          </a>
+        </div>
+        <label for="menu-toggle" class="menuIcon">
+          <svg
+            class="fill-current text-gray-900"
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+          >
             <title>menu</title>
             <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
           </svg>
-      </label>
-      <input class="hidden" type="checkbox" id="menu-toggle" />
-      <div class="menuItems" id="menu">
-        <ul class="pt-5 md:pt-0 md:flex md:flex-grow md:justify-center">
-          <li class="py-2 mx-4"><a href="#" class="capitalize">about</a></li>
-          <li class="py-2 mx-4"><a href="#" class="capitalize">projects</a></li>
-          <li class="py-2 mx-4"><a href="#" class="capitalize">resume</a></li>
-          <li class="py-2 mx-4"><a href="#" class="capitalize">contact</a></li>
-        </ul>
-        <div class="mt-2 lg:pr-4">
-          <i class="fa fa-moon-o" aria-hidden="true"></i>
-          <span> Color mode</span>
-        </div>
-      </div>
-    </div>
-    <div class="container mx-auto header-hero">
-      <div class="sm:w-full lg:w-1/2 px-2 pt-32">
-        <span class="header-hero-span">welcome to my portfolio website!</span>
-        <h1 class="text-4xl font-semibold my-4">Hey folks, I'm Marvel Sann Web Designer</h1>
-        <p class="mb-4 text-textColor tracking-wide text-lg">
-          Building a successful product is a challenge. I am highly energetic in user experience design, interfaces and web
-          development.
-        </p>
-        <div class="w-full">
-          <button class="btn sm:w-auto bg-grey text-textColor">
-            <i class="fa fa-file-text-o" aria-hidden="true"></i>
-            download resume
-          </button>
-          <button class="btn sm:w-auto bg-secondryColor text-white">get a free quote</button>
-        </div>
-      </div>
-      <div class="mt-16 w-full lg:w-1/2 flex justify-center">
-        <img src="./dist/images/app/image_header.svg" alt="image_header" class="lg:w-4/5">
-      </div>
-    </div>
-  </header>
-  <!-- End Header Section -->
-  <!-- Start Projects Section -->
-  <div class="container mx-auto text-center pb-16">
-    <div class="max-w-4xl md:max-w-2xl mt-6 px-2 mx-auto">
-      <h2 class="text-3xl md:text-4xl font-black text-headingColor">
-        Things I have designed for digital media agencies
-      </h2>
-    </div>
-    <div class="owl-carousel owl-theme owl-loaded owl-drag">
-      <div class="owl-stage-outer">
-        <div class="owl-stage">
-          <div class="owl-item">
-            <img src="./dist/images/project/project-image01.png" alt="project 1">
-          </div>
-          <div class="owl-item">
-            <img src="./dist/images/project/project-image02.png" alt="project 2">
-          </div>
-          <div class="owl-item">
-            <img src="./dist/images/project/project-image03.png" alt="project 3">
-          </div>
-          <div class="owl-item">
-            <img src="./dist/images/project/project-image04.png" alt="project 4">
-          </div>
-          <div class="owl-item">
-            <img src="./dist/images/project/project-image05.png" alt="project 5">
+        </label>
+        <input class="hidden" type="checkbox" id="menu-toggle" />
+        <div class="menuItems" id="menu">
+          <ul class="pt-5 md:pt-0 md:flex md:flex-grow md:justify-center">
+            <li class="py-2 mx-4"><a href="#" class="capitalize">about</a></li>
+            <li class="py-2 mx-4">
+              <a href="#" class="capitalize">projects</a>
+            </li>
+            <li class="py-2 mx-4"><a href="#" class="capitalize">resume</a></li>
+            <li class="py-2 mx-4">
+              <a href="#" class="capitalize">contact</a>
+            </li>
+          </ul>
+          <div class="mt-2 lg:pr-4">
+            <i class="fa fa-moon-o" aria-hidden="true"></i>
+            <span> Color mode</span>
           </div>
         </div>
       </div>
+      <div class="container mx-auto header-hero">
+        <div class="sm:w-full lg:w-1/2 px-2 pt-32">
+          <span class="header-hero-span">welcome to my portfolio website!</span>
+          <h1 class="text-4xl font-semibold my-4">
+            Hey folks, I'm Marvel Sann Web Designer
+          </h1>
+          <p class="mb-4 text-textColor tracking-wide text-lg">
+            Building a successful product is a challenge. I am highly energetic
+            in user experience design, interfaces and web development.
+          </p>
+          <div class="w-full">
+            <button class="btn sm:w-auto bg-grey text-textColor">
+              <i class="fa fa-file-text-o" aria-hidden="true"></i>
+              download resume
+            </button>
+            <button class="btn sm:w-auto bg-secondryColor text-white">
+              get a free quote
+            </button>
+          </div>
+        </div>
+        <div class="mt-16 w-full lg:w-1/2 flex justify-center">
+          <img
+            src="./dist/images/app/image_header.svg"
+            alt="image_header"
+            class="lg:w-4/5"
+          />
+        </div>
+      </div>
+    </header>
+    <!-- End Header Section -->
+    <!-- Start Projects Section -->
+    <div class="container mx-auto text-center pb-16">
+      <div class="max-w-4xl md:max-w-2xl mt-6 px-2 mx-auto">
+        <h2 class="text-3xl md:text-4xl font-black text-headingColor">
+          Things I have designed for digital media agencies
+        </h2>
+      </div>
+      <div class="owl-carousel owl-theme owl-loaded owl-drag">
+        <div class="owl-stage-outer">
+          <div class="owl-stage">
+            <div class="owl-item">
+              <img
+                src="./dist/images/project/project-image01.png"
+                alt="project 1"
+              />
+            </div>
+            <div class="owl-item">
+              <img
+                src="./dist/images/project/project-image02.png"
+                alt="project 2"
+              />
+            </div>
+            <div class="owl-item">
+              <img
+                src="./dist/images/project/project-image03.png"
+                alt="project 3"
+              />
+            </div>
+            <div class="owl-item">
+              <img
+                src="./dist/images/project/project-image04.png"
+                alt="project 4"
+              />
+            </div>
+            <div class="owl-item">
+              <img
+                src="./dist/images/project/project-image05.png"
+                alt="project 5"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-  <!-- End Projects Section -->
+    <!-- End Projects Section -->
 
-  <!-- Start Resume Section -->
-  <div class="container mx-auto px-8 font-maven pb-20">
-    <div class="flex flex-wrap lg:flex-no-wrap">
-      <div class="w-full lg:w-1/2">
-        <h2 class="capitalize font-bold text-4xl text-headingColor mb-8">experiences</h2>
-        <div class="timeline relative py-4">
-          <div class="timeline-yr">
-            <span>2019</span>
+    <!-- Start Resume Section -->
+    <div class="container mx-auto px-8 font-maven pb-20">
+      <div class="flex flex-wrap lg:flex-no-wrap">
+        <div class="w-full lg:w-1/2">
+          <h2 class="capitalize font-bold text-4xl text-headingColor mb-8">
+            experiences
+          </h2>
+          <div class="timeline relative py-4">
+            <div class="timeline-yr">
+              <span>2019</span>
+            </div>
+            <div class="ml-4">
+              <h3 class="mb-2">
+                <span class="timeline-content-title-primary"
+                  >project manager</span
+                >
+                <span class="timeline-content-title-secondary"
+                  >best studio</span
+                >
+              </h3>
+              <p class="timeline-content-text">
+                Proin ornare non purus ut rutrum. Nulla facilisi. Aliquam
+                laoreet libero ac pharetra feugiat. Cras ac fermentum nunc, a
+                faucibus nunc.
+              </p>
+            </div>
           </div>
-          <div class="ml-4">
-            <h3 class="mb-2">
-              <span class="timeline-content-title-primary">project manager</span>
-              <span class="timeline-content-title-secondary">best studio</span>
-            </h3>
-            <p class="timeline-content-text">
-              Proin ornare non purus ut rutrum. Nulla facilisi. Aliquam laoreet libero ac pharetra feugiat. Cras ac fermentum nunc, a
-              faucibus nunc.
-            </p>
+          <div class="timeline relative py-4">
+            <div class="timeline-yr">
+              <span>2018</span>
+            </div>
+            <div class="ml-4">
+              <h3 class="mb-2">
+                <span class="timeline-content-title-primary">UX designer</span>
+                <span class="timeline-content-title-secondary"
+                  >digital ace</span
+                >
+              </h3>
+              <p class="timeline-content-text">
+                Fusce rutrum augue id orci rhoncus molestie. Nunc auctor
+                dignissim lacus vel iaculis.
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="timeline relative py-4">
-          <div class="timeline-yr">
-            <span>2018</span>
+          <div class="timeline relative py-4">
+            <div class="timeline-yr">
+              <span>2016</span>
+            </div>
+            <div class="ml-4">
+              <h3 class="mb-2">
+                <span class="timeline-content-title-primary"
+                  >UI freelancer</span
+                >
+                <span class="timeline-content-title-secondary"
+                  >digital ace</span
+                >
+              </h3>
+              <p class="timeline-content-text">
+                Sed fringilla vitae enim sit amet cursus. Sed cursus dictum
+                tortor quis pharetra. Pellentesque habitant morbi tristique
+                senectus et netus et malesuada fames ac turpis egestas.
+              </p>
+            </div>
           </div>
-          <div class="ml-4">
-            <h3 class="mb-2">
-              <span class="timeline-content-title-primary">UX designer</span>
-              <span class="timeline-content-title-secondary">digital ace</span>
-            </h3>
-            <p class="timeline-content-text">
-              Fusce rutrum augue id orci rhoncus molestie. Nunc auctor dignissim lacus vel iaculis.
-            </p>
-          </div>
-        </div>
-        <div class="timeline relative py-4">
-          <div class="timeline-yr">
-            <span>2016</span>
-          </div>
-          <div class="ml-4">
-            <h3 class="mb-2">
-              <span class="timeline-content-title-primary">UI freelancer</span>
-              <span class="timeline-content-title-secondary">digital ace</span>
-            </h3>
-            <p class="timeline-content-text">
-              Sed fringilla vitae enim sit amet cursus. Sed cursus dictum tortor quis pharetra. Pellentesque habitant morbi tristique
-              senectus et netus et malesuada fames ac turpis egestas.
-            </p>
-          </div>
-        </div>
-        <div class="relative py-4">
-          <div class="timeline-yr">
-            <span>2014</span>
-          </div>
-          <div class="ml-4">
-            <h3 class="mb-2">
-              <span class="timeline-content-title-primary">junior designer</span>
-              <span class="timeline-content-title-secondary">crafted co.</span>
-            </h3>
-            <p class="timeline-content-text">
-              Cras scelerisque scelerisque condimentum. Nullam at volutpat mi. Nunc auctor ipsum eget magna consequat viverra.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="w-full lg:w-1/2 lg:ml-8">
-        <h2 class="capitalize font-bold text-4xl text-headingColor mb-8">educations</h2>
-        <div class="timeline relative py-4">
-          <div class="timeline-yr">
-            <span>2017</span>
-          </div>
-          <div class="ml-4">
-            <h3 class="mb-2">
-              <span class="timeline-content-title-primary">mobile web</span>
-              <span class="timeline-content-title-secondary">master design</span>
-            </h3>
-            <p class="timeline-content-text">
-              Please tell your friends about Tooplate website. That would be very helpful. We need your support.
-            </p>
-          </div>
-        </div>
-        <div class="timeline relative py-4">
-          <div class="timeline-yr">
-            <span>2015</span>
-          </div>
-          <div class="ml-4">
-            <h3 class="mb-2">
-              <span class="timeline-content-title-primary">user interfaces</span>
-              <span class="timeline-content-title-secondary">creative agency</span>
-            </h3>
-            <p class="timeline-content-text">
-              Tooplate is a great website to download HTML templates without any login or email.
-            </p>
+          <div class="relative py-4">
+            <div class="timeline-yr">
+              <span>2014</span>
+            </div>
+            <div class="ml-4">
+              <h3 class="mb-2">
+                <span class="timeline-content-title-primary"
+                  >junior designer</span
+                >
+                <span class="timeline-content-title-secondary"
+                  >crafted co.</span
+                >
+              </h3>
+              <p class="timeline-content-text">
+                Cras scelerisque scelerisque condimentum. Nullam at volutpat mi.
+                Nunc auctor ipsum eget magna consequat viverra.
+              </p>
+            </div>
           </div>
         </div>
-        <div class="relative py-4">
-          <div class="timeline-yr">
-            <span>2013</span>
+        <div class="w-full lg:w-1/2 lg:ml-8">
+          <h2 class="capitalize font-bold text-4xl text-headingColor mb-8">
+            educations
+          </h2>
+          <div class="timeline relative py-4">
+            <div class="timeline-yr">
+              <span>2017</span>
+            </div>
+            <div class="ml-4">
+              <h3 class="mb-2">
+                <span class="timeline-content-title-primary">mobile web</span>
+                <span class="timeline-content-title-secondary"
+                  >master design</span
+                >
+              </h3>
+              <p class="timeline-content-text">
+                Please tell your friends about Tooplate website. That would be
+                very helpful. We need your support.
+              </p>
+            </div>
           </div>
-          <div class="ml-4">
-            <h3 class="mb-2">
-              <span class="timeline-content-title-primary">artwork design</span>
-              <span class="timeline-content-title-secondary">new art school</span>
-            </h3>
-            <p class="timeline-content-text">
-              You can freely use Tooplate's templates for your business or personal sites. You cannot redistribute this template
-              without a permission.
-            </p>
+          <div class="timeline relative py-4">
+            <div class="timeline-yr">
+              <span>2015</span>
+            </div>
+            <div class="ml-4">
+              <h3 class="mb-2">
+                <span class="timeline-content-title-primary"
+                  >user interfaces</span
+                >
+                <span class="timeline-content-title-secondary"
+                  >creative agency</span
+                >
+              </h3>
+              <p class="timeline-content-text">
+                Tooplate is a great website to download HTML templates without
+                any login or email.
+              </p>
+            </div>
+          </div>
+          <div class="relative py-4">
+            <div class="timeline-yr">
+              <span>2013</span>
+            </div>
+            <div class="ml-4">
+              <h3 class="mb-2">
+                <span class="timeline-content-title-primary"
+                  >artwork design</span
+                >
+                <span class="timeline-content-title-secondary"
+                  >new art school</span
+                >
+              </h3>
+              <p class="timeline-content-text">
+                You can freely use Tooplate's templates for your business or
+                personal sites. You cannot redistribute this template without a
+                permission.
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <!-- End Resume Section -->
+    <!-- End Resume Section -->
 
-  <script src="./dist/js/jquery-3.3.1.min.js"></script>
-  <script src="./dist/js/owl.carousel.min.js"></script>
-  <script src="./dist/js/main.js"></script>
-</body>
+    <!-- Start Contact Section -->
+    <div class="container mx-auto px-8">
+      <div class="flex pb-12">
+        <div class="w-1/2">
+          <div class="mapouter">
+            <div class="gmap_canvas">
+              <iframe
+                width="500"
+                height="300"
+                id="gmap_canvas"
+                src="https://maps.google.com/maps?q=Theater%20District&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                frameborder="0"
+                scrolling="no"
+                marginheight="0"
+                marginwidth="0"
+              ></iframe
+              ><a
+                href="https://www.embedgooglemap.net/blog/nordvpn-coupon-code/"
+                >nordvpn 2 year discount</a
+              >
+            </div>
+            <style>
+              .mapouter {
+                position: relative;
+                text-align: right;
+                height: 300px;
+                width: 500px;
+              }
+              .gmap_canvas {
+                overflow: hidden;
+                background: none !important;
+                height: 300px;
+                width: 500px;
+              }
+            </style>
+          </div>
+          <div class="p-8 bg-secondryColor text-white clearfix w-500">
+            <div class="float-left">
+              <h4 class="text-3xl font-semibold mb-2">Say hello</h4>
+              <p>010 020 0960</p>
+              <a href="#">hello@company.co</a>
+            </div>
+            <div class="float-right mt-3">
+              <a href="#"
+                ><i
+                  class="fa fa-dribbble text-xl mb-3 block"
+                  aria-hidden="true"
+                ></i
+              ></a>
+              <a href="#"
+                ><i
+                  class="fa fa-instagram text-xl mb-3 block"
+                  aria-hidden="true"
+                ></i
+              ></a>
+              <a href="#"
+                ><i
+                  class="fa fa-youtube-play text-xl mb-3 block"
+                  aria-hidden="true"
+                ></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="w-1/2 -ml-10">
+          <h3 class="text-3xl md:text-4xl font-semibold text-headingColor w-11/12 mb-5 font-maven leading-snug">Interested to work together? Let's talk</h3>
+          <form class="w-4/5">
+            <input class="border-solid border border-gray-500 px-4 py-2 rounded-sm outline-none w-4/7" type="text" placeholder="Your Name">
+            <input class="border-solid border border-gray-500 px-4 py-2 rounded-sm outline-none w-4/7 float-right" type="email" placeholder="Email">
+            <textarea class="w-full mt-3 border-solid border border-gray-500 px-4 py-2 outline-none" cols="30" rows="8" placeholder="Message">
+            </textarea>
+            <button class="btn sm:w-auto bg-secondryColor text-white float-right" type="submit">Send Button</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- End Contact Section -->
+
+    <script src="./dist/js/jquery-3.3.1.min.js"></script>
+    <script src="./dist/js/owl.carousel.min.js"></script>
+    <script src="./dist/js/main.js"></script>
+  </body>
 </html>
