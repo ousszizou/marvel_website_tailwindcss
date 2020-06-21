@@ -294,12 +294,12 @@
 
     <!-- Start Contact Section -->
     <div class="container mx-auto px-8">
-      <div class="flex pb-12">
-        <div class="w-1/2">
+      <div class="flex flex-wrap lg:flex-no-wrap pb-12">
+        <div class="w-full lg:w-2/5 xl:1/2 mb-10">
           <div class="mapouter">
             <div class="gmap_canvas">
               <iframe
-                width="500"
+                width="100%"
                 height="300"
                 id="gmap_canvas"
                 src="https://maps.google.com/maps?q=Theater%20District&t=&z=13&ie=UTF8&iwloc=&output=embed"
@@ -318,17 +318,17 @@
                 position: relative;
                 text-align: right;
                 height: 300px;
-                width: 500px;
+                width: 100%;
               }
               .gmap_canvas {
                 overflow: hidden;
                 background: none !important;
                 height: 300px;
-                width: 500px;
+                width: 100%;
               }
             </style>
           </div>
-          <div class="p-8 bg-secondryColor text-white clearfix w-500">
+          <div class="p-8 bg-secondryColor text-white clearfix w-full">
             <div class="float-left">
               <h4 class="text-3xl font-semibold mb-2">Say hello</h4>
               <p>010 020 0960</p>
@@ -356,15 +356,17 @@
             </div>
           </div>
         </div>
-        <div class="w-1/2 -ml-10">
-          <h3 class="text-3xl md:text-4xl font-semibold text-headingColor w-11/12 mb-5 font-maven leading-snug">Interested to work together? Let's talk</h3>
-          <form class="w-4/5">
-            <input class="border-solid border border-gray-500 px-4 py-2 rounded-sm outline-none w-4/7" type="text" placeholder="Your Name">
-            <input class="border-solid border border-gray-500 px-4 py-2 rounded-sm outline-none w-4/7 float-right" type="email" placeholder="Email">
-            <textarea class="w-full mt-3 border-solid border border-gray-500 px-4 py-2 outline-none" cols="30" rows="8" placeholder="Message">
-            </textarea>
-            <button class="btn sm:w-auto bg-secondryColor text-white float-right" type="submit">Send Button</button>
-          </form>
+        <div class="w-full lg:w-3/5 xl:1/2 xl:ml-2">
+          <div>
+            <h3 class="text-2xlPlus sm:text-4xl md:text-5xl lg:text-4xl font-semibold text-headingColor w-full lg:w-10/12 xl:w-9/12 mb-5 lg:ml-20" font-maven leading-snug">Interested to work together? Let's talk</h3>
+            <form class="w-full lg:w-4/5 lg:ml-20">
+              <input class="border-solid border border-gray-500 px-4 py-3 rounded-sm outline-none my-3 w-full lg:w-4/7" type="text" placeholder="Your Name">
+              <input class="border-solid border border-gray-500 px-4 py-3 rounded-sm outline-none my-3 w-full lg:w-4/7 float-right" type="email" placeholder="Email">
+              <textarea class="w-full my-3 border-solid border border-gray-500 px-4 py-2 outline-none" cols="30" rows="6" placeholder="Message">
+              </textarea>
+              <button class="btn lg:w-auto bg-primaryColor text-white float-right" type="submit">Send Button</button>
+            </form>
+          </div>
         </div>
       </div>
     </div>

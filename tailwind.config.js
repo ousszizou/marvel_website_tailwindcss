@@ -7,15 +7,16 @@ module.exports = {
       colors: {
         textColor: "#5b5b5b",
         grey: "#EEEEEE",
+        primaryColor: "#ffc200",
         secondryColor: "#47465A",
         headingColor: "#353535",
         headingColor2: "#484848"
       },
-      spacing: {
-        "500": "31.25rem"
-      },
       width: {
-        "4/7": "45%"
+        "4/7": "47%"
+      },
+      fontSize: {
+        "2xlPlus": "1.75rem"
       }
     },
   },
