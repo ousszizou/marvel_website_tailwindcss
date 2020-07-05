@@ -15,3 +15,19 @@ $(document).ready(function () {
     }
   });
 });
+
+var options = {
+  strings: ["UI Specialist", "Marvel Sann", "Web Designer"],
+  typeSpeed: 80,
+  fadeOut: true,
+  loop: true,
+  showCursor: false,
+};
+
+var typed = new Typed(".element", options);
+
+var myElement = document.querySelector(".navbar");
+
+var headroom = new Headroom(myElement);
+
+headroom.init();
