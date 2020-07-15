@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "postcss src/main.css -o dist/css/main.css -w"
+    "dev": "NODE_ENV=development postcss src/main.css -o dist/css/main.css -w",
+    "build": "NODE_ENV=production postcss src/main.css -o dist/css/main.css"
   },
   "keywords": [],
   "author": "",
@@ -14,5 +15,8 @@
     "postcss": "^7.0.27",
     "postcss-cli": "^7.1.0",
     "tailwindcss": "^1.2.0"
+  },
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^2.3.0"
   }
 }

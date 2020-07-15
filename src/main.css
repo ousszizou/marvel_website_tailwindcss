@@ -169,4 +169,56 @@
   position: static;
 }
 
+/* ===== DARK MODE ===== */
+.dark-mode {
+  background-color: #0c0c0d;
+}
+
+.dark-mode .navbar {
+  color: white;
+  background-color: #0c0c0d;
+}
+
+.dark-mode .header-hero-span {
+  color: white;
+  background: #0d0c15;
+  border-radius: 50px;
+}
+
+.dark-mode .header-hero-heading {
+  color: white;
+}
+
+.dark-mode .headroom--pinned {
+  border-bottom: 1px solid #1b1b1b;
+  box-shadow: none;
+}
+
+.dark-mode .ps-heading {
+  color: white;
+}
+
+.dark-mode .rs-heading {
+  color: white;
+}
+
+.dark-mode .timeline-content-title-primary {
+  color: white;
+}
+
+.dark-mode .cs-heading {
+  color: white;
+}
+
+.dark-mode input,
+.dark-mode textarea {
+  background-color: #0c0c0d;
+  color: #a0aec0;
+}
+
+.dark-mode input:hover,
+.dark-mode textarea:hover {
+  border-color: #ffc200;
+}
+
 @tailwind utilities;

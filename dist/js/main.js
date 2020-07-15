@@ -14,6 +14,9 @@ $(document).ready(function () {
       },
     }
   });
+  $('.color-mode').click(function () {
+    $('body').toggleClass('dark-mode')
+  });
 });
 
 var options = {
